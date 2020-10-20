@@ -3,11 +3,17 @@ import '../styles/App.css';
 
 class App extends Component {
     render() {
-
+const cities=["Goa","Darjeeling","Lonavala"];
         return(
-           <>
-//write your code here
-	</>
+  <>
+  <ol>
+      {cities.map((city,index)=>(
+          <li key={`location ${index+1}`}>{city}</li>
+      ))
+
+      }
+      </ol>
+  </>
         )
     }
 }
